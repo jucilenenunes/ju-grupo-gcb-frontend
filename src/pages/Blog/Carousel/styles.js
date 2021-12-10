@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import Slider from 'react-slick';
-import TESTE from '../../../assets/img/blog_image_1.svg';
 
 export const CarouselContainer = styled(Slider)`
   div.slick-list {

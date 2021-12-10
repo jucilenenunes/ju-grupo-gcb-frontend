@@ -1,6 +1,8 @@
 import { useState } from 'react';
+import * as moment from 'moment';
 import { FormControl } from './styles';
 import Modal from '../../components/Modal';
+
 
 const Register = ({open, setOpen}) => {
     const [dataRegister, setDataRegister] = useState({});
@@ -43,21 +45,11 @@ const Register = ({open, setOpen}) => {
             if (!dtReg.birthDate) {
                 result.hasErrors = true;
                 result.errors.push({ field: 'birthDate', message: 'Field "Birth Date" is required.'});
-            } else if (dtReg.birthDate.length !== 10) {
-                result.hasErrors = true;
-                result.errors.push({ field: 'birthDate', message: 'Field "Birth Date" invalid.'});
             } else {
-                try {
-                    const testYear = parseInt(dtReg.birthDate.substring(6, 10));
-                    const testMonth = parseInt(dtReg.birthDate.substring(3, 5));
-                    const testDay = parseInt(dtReg.birthDate.substring(0, 2));
-                    if (!Number.isInteger(testYear)) throw new "";
-                    if (!Number.isInteger(testYear)) throw new "";
-                    if (!Number.isInteger(testYear)) throw new "";
-                    new Date(testYear, testMonth, testDay);
-                } catch {
+                let birthDateIsValid = moment(dtReg.birthDate, 'DD/MM/YYYY', true).isValid();
+                if (!birthDateIsValid) {
                     result.hasErrors = true;
-                    result.errors.push({ field: 'birthDate', message: 'Field "Birth Date" invalid.'});
+                    result.errors.push({ field: 'birthDate', message: 'Field "Birth Date" is not valid date.'});
                 }
             }
 
@@ -82,7 +74,6 @@ const Register = ({open, setOpen}) => {
 
         if (result.hasErrors) {
             result.errors.forEach((error) => {
-                console.log(error);
                 document.getElementById(error.field).classList.add('error');
                 document.getElementById(error.field).getElementsByTagName('span')[0].innerText = error.message;
             });
