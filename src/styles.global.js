@@ -28,7 +28,7 @@ export default createGlobalStyle`
     body {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: center;       
     }
 
     h1, h2, h3, h4, h5, h6 {
@@ -45,8 +45,8 @@ export default createGlobalStyle`
         color: var(--text-light-gray);
     }
 
+    button,
     a.button,
-    button.button,
     input.button {
         font-family: var(--text-default-font);
         font-size: 16px;
@@ -60,34 +60,9 @@ export default createGlobalStyle`
         border: none;
     }
 
-    a.button.active,
-    a.button:hover
+    button.active,
+    button:hover
     {
         background-color: var(--bg-green-night);
-    }
-
-    @media (max-width: 1365px)
-    {
-        
-    }
-
-    @media (max-width: 1199px)
-    {
-        
-    }
-
-    @media (max-width: 1023px)
-    {
-
-    }
-
-    @media (max-width: 767px)
-    {
-        
-    }
-
-    @media (max-width: 479px)
-    {
-
     }
 `;

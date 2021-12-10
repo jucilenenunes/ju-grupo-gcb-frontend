@@ -1,7 +1,7 @@
-import Home from './Home';
+import FullPages from './FullPages';
 import Register from './Register';
 
 export {
-    Home,
+    FullPages,
     Register
-}
+};

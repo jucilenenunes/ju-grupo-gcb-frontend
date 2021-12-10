@@ -3,10 +3,10 @@ const HeaderMenu = ({setRegisterOpen}) => {
         <>
 
             <ul className="menu">
-                <li><button>Healthy Recipes</button></li>
-                <li><button>Blog</button></li>
-                <li><button>Join</button></li>
-                <li><button className="button" onClick={() => setRegisterOpen(true) }>Register</button></li>
+                <li>HEALTHY RECIPES</li>
+                <li>BLOG</li>
+                <li>JOIN</li>
+                <li><button onClick={() => setRegisterOpen(true) }>REGISTER</button></li>
             </ul>
 
 

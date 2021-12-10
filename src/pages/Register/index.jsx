@@ -14,7 +14,11 @@ const Register = ({open, setOpen}) => {
         ); 
 
         if (e.target.parentElement.id === 'addressPostalCode' && e.target.value.length === 9) {
-            console.log(`Buscar CEP: ${e.target.value}`);
+            fetch(`https://viacep.com.br/ws/${e.target.value.replace('-', '')}/json/`)
+            .then(rs => rs.json())
+            .then((rs) => {
+                setDataRegister({...dataRegister, cepResultado: { ...rs }});
+            });
         }
     }
 
@@ -65,7 +69,7 @@ const Register = ({open, setOpen}) => {
             if (!dtReg.addressPostalCode) {
                 result.hasErrors = true;
                 result.errors.push({ field: 'addressPostalCode', message: 'Field "CEP" is required.'});
-            } else if (dtReg.addressPostalCode.length != 9) {
+            } else if (dtReg.addressPostalCode.length !== 9) {
                 result.hasErrors = true;
                 result.errors.push({ field: 'addressPostalCode', message: 'Field "CEP" is required and have to contain 9 characters.'});
             }
@@ -116,6 +120,17 @@ const Register = ({open, setOpen}) => {
                     <label>CEP:</label>
                     <input type="text" minLength="9" maxLength="9" placeholder="09665-000" onChange={onChangeField} />
                     <span></span>
+                    {
+                        dataRegister.cepResultado ? (
+                            <div className="cepResultado">
+                                <h5>Address:</h5>
+                                &nbsp;{dataRegister.cepResultado.logradouro}<br />
+                                &nbsp;{dataRegister.cepResultado.bairro},&nbsp;
+                                {dataRegister.cepResultado.localidade}&nbsp;-&nbsp;
+                                {dataRegister.cepResultado.uf}
+                            </div>
+                        ) : ""
+                    }
                 </FormControl>
                 <FormControl id="addressNumber">
                     <label>Address Number:</label>
@@ -128,7 +143,7 @@ const Register = ({open, setOpen}) => {
                     <span></span>
                 </FormControl>
                 <FormControl>
-                    <button className="button" onClick={register}>Register</button>
+                    <button onClick={register}>Register</button>
                 </FormControl>
             </div>
         </Modal>

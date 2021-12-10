@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const FormControl = styled.div`
-    display: block;
     justify-content: center;
     align-items: center;
     padding: 0 0 10px 0;
@@ -14,8 +13,7 @@ export const FormControl = styled.div`
         font-size: 16px;
     }
 
-    > button.button {
-        display: block;
+    > button {
         float: right;
     }
 
@@ -29,6 +27,10 @@ export const FormControl = styled.div`
 
     > label {
         display: block;
+    }
+
+    div.cepResultado {
+        padding: 0 10px 0 30px;
     }
 `;
 
