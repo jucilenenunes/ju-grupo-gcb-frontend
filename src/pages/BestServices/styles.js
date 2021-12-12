@@ -25,4 +25,8 @@ export const BestServicesContainer = styled.section`
     > div > p {
         margin: 0 0 20px 0;
     }
+
+    > div > button {
+        box-shadow: 2px 4px 4px var(--bg-green);
+    }
 `;

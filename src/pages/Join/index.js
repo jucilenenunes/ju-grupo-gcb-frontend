@@ -11,7 +11,7 @@ function Join() {
                         to get special offer
                     </h2>
                     <div>
-                        <input type="text" />
+                        <input type="text" placeholder='Enter your email address' />
                         <button>Join</button>
                     </div>
                 </div>

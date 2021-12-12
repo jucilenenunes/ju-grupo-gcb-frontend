@@ -14,16 +14,16 @@ export const JoinContainer = styled.section`
     height: 672px;
 
     > div {
+        margin-left: 120px;
         width: 412px;
         font-family: var(--text-title-font);
-        font-weigth: bold;
+        font-weight: bold;
         color: var(--text-blue);       
     }
 
-    > div > h1 {
+    > div > h2 {
         font-family: var(--text-title-font);
-        font-size: 48px;
-        font-weigth: bold;
+        font-weight: bold;
         color: var(--text-blue);
     }
 
@@ -43,10 +43,12 @@ export const JoinContainer = styled.section`
         border-radius: 5px;
         width: 343px;
         margin-right: 10px;
-        padding: 10px;
+        padding: 20px; 
     }
 
     > div > div > button {
-        padding: 12px 20px;
+        padding: 20px 35px;
+        font-weight: bold;
+        box-shadow: 2px 4px 4px var(--bg-green);
     }
 `;

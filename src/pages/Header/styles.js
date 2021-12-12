@@ -22,10 +22,11 @@ export const HeaderContainer = styled.section`
     }
 
     .header-bar > .logotype {
+        margin-left: 137px;
         align-self: center;
         font-family: var(--text-title-font);
         font-size: 32px;
-        font-weigth: bold;
+        font-weight: bold;
         color: var(--text-green);
     }
 
@@ -95,16 +96,17 @@ export const HeaderContainer = styled.section`
     }
 
     .header-call-to-action {
+        margin-left: 137px;
         width: 412px;
         font-family: var(--text-title-font);
-        font-weigth: bold;
+        font-weight: bold;
         color: var(--text-blue);       
     }
 
     .header-call-to-action > h1 {
         font-family: var(--text-title-font);
         font-size: 48px;
-        font-weigth: bold;
+        font-weight: bold;
         color: var(--text-blue);
     }
 
