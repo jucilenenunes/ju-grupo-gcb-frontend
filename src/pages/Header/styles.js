@@ -1,16 +1,23 @@
 import styled from 'styled-components';
 import { FullContainerStyles, ContainerStyles } from '../../styles.shared';
 import Illustration from '../../assets/img/Illustration.svg';
+import { HeaderFullContainer768, HeaderContainer768 } from './styles.max.768';
+import { HeaderFullContainer1024, HeaderContainer1024 } from './styles.max.1024';
+import { HeaderFullContainer1200, HeaderContainer1200 } from './styles.max.1200';
 
 export const HeaderFullContainer = styled.header`
     ${FullContainerStyles}
     background-color: var(--bg-white);
+
+    ${HeaderFullContainer1200}
+    ${HeaderFullContainer1024}
+    ${HeaderFullContainer768}
 `;
 
 export const HeaderContainer = styled.section`
     ${ContainerStyles}
     background: no-repeat right url(${Illustration});
-    height: 746px;
+    height: 744px;
 
     .header-bar {
         display: flex;
@@ -186,4 +193,8 @@ export const HeaderContainer = styled.section`
     //         transform: translateX(0);
     //     }
     // }
+
+    ${HeaderContainer1200}
+    ${HeaderContainer1024}
+    ${HeaderContainer768}
 `

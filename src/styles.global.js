@@ -11,6 +11,7 @@ export default createGlobalStyle`
         --text-light-gray: #b4b4b4;
 
         --bg-green: #badc58;
+        --bg-green-menu: #FFFFFF15;
         --bg-green-night: #a7c457;
         --bg-light-gray: #fafafc;
         --bg-white: #ffffff;
@@ -20,6 +21,7 @@ export default createGlobalStyle`
 
     div#root {
         width: 100%;
+        min-width: 320px;
     }
 
     * {
@@ -74,4 +76,6 @@ export default createGlobalStyle`
     {
         background-color: var(--bg-green-night);
     }
+
+
 `;
