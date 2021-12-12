@@ -7,7 +7,7 @@ import HomeCardImg4 from '../../assets/img/comida_4.svg';
 
 function BestRecipes() {
     return (
-        <BestRecipesContainer>
+        <BestRecipesContainer id="OURBESTRECIPES">
             <article>
                 <h2>Our Best Recipes</h2>
                 <span>

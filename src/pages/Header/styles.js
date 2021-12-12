@@ -27,6 +27,7 @@ export const HeaderContainer = styled.header`
     .header-bar > ul.menu {
         padding: 0 137px;
         display: flex;
+        align-items: center;
         list-style: none;
         color: White;
     }
@@ -49,7 +50,7 @@ export const HeaderContainer = styled.header`
         text-decoration: underline;
     }
 
-    .header-bar > ul.menu >  li > a.button {
+    .header-bar > ul.menu >  li > button {
         font-family: var(--text-default-font);
         font-weight: 700;
         color: var(--text-green);
@@ -59,8 +60,8 @@ export const HeaderContainer = styled.header`
         text-transform: uppercase;
     }
 
-    .header-bar > ul.menu >  li > a.button.active,
-    .header-bar > ul.menu >  li > a.button:hover
+    .header-bar > ul.menu >  li > button.active,
+    .header-bar > ul.menu >  li > button:hover
     {
         background-color: #F7F7F7;
     }
@@ -120,7 +121,7 @@ export const HeaderContainer = styled.header`
         padding: 10px;
     }
 
-    .header-call-to-action > .form-box > a.button {
+    .header-call-to-action > .form-box > button {
         padding: 10px;
         width: 52px;
         height: 52px;

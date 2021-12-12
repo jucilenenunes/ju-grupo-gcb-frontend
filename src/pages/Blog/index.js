@@ -4,7 +4,7 @@ import { BlogContainer } from './styles';
 
 function Blog() {
     return (
-        <BlogContainer>
+        <BlogContainer id="READOURBLOG">
             <div>
                 <h3>
                     Read Our Blog

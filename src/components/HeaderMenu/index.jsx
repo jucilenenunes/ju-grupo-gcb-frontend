@@ -3,9 +3,9 @@ const HeaderMenu = ({setRegisterOpen}) => {
         <>
 
             <ul className="menu">
-                <li>HEALTHY RECIPES</li>
-                <li>BLOG</li>
-                <li>JOIN</li>
+                <li><a href="/#OURBESTRECIPES">HEALTHY RECIPES</a></li>
+                <li><a href="/#READOURBLOG">BLOG</a></li>
+                <li><a href="/#JOINOURMEMBERSHIP">JOIN</a></li>
                 <li><button onClick={() => setRegisterOpen(true) }>REGISTER</button></li>
             </ul>
 

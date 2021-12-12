@@ -3,7 +3,7 @@ import { JoinContainer } from './styles';
 
 function Join() {
     return (
-        <JoinContainer>
+        <JoinContainer id="JOINOURMEMBERSHIP">
             <div>
                 <h2>
                     Join our membership<br />

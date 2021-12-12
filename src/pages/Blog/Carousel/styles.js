@@ -2,6 +2,16 @@ import styled from 'styled-components';
 import Slider from 'react-slick';
 
 export const CarouselContainer = styled(Slider)`
+  > div > div > div > div > div > div {  
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  > div > div > div > div > div > div > img {
+    margin-right: 10px;
+  }
+
   div.slick-list {
     height: 560px !important;
   }
@@ -21,6 +31,8 @@ export const CarouselContainer = styled(Slider)`
       padding: 0;
       border: 0;
   }
+
+  
 
   h3,
   div {

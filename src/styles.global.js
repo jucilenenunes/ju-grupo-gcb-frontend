@@ -24,7 +24,7 @@ export default createGlobalStyle`
         outline: 0;
         box-sizing: border-box;
     }
-
+    
     body {
         display: flex;
         align-items: center;
@@ -32,7 +32,8 @@ export default createGlobalStyle`
     }
 
     h1, h2, h3, h4, h5, h6 {
-        color: var(--text-blue)
+        font-family: var(--text-default-font);
+        color: var(--text-blue);
     }
 
     h1 { font-size: 48px; }
@@ -43,6 +44,10 @@ export default createGlobalStyle`
         font-family: var(--text-default-font);
         font-size: 16px;
         color: var(--text-light-gray);
+    }
+
+    a {
+        text-decoration: none;
     }
 
     button,
