@@ -1,4 +1,4 @@
-import { Container } from '../../styles.shared';
+import { FullContainer } from '../../styles.shared';
 import Header from '../Header';
 import BestRecipes from '../BestRecipes';
 import BestServices from '../BestServices';
@@ -11,12 +11,12 @@ const FullPages = () => {
     return (
         <>
             <Header />
-            <Container>
+            <main>
                 <BestRecipes />
                 <BestServices />
                 <Blog />
                 <Join />
-            </Container>
+            </main>
             <Footer />
         </>
     );

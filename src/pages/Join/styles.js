@@ -1,12 +1,16 @@
 import styled from 'styled-components';
-import { DefaultContainer } from '../../styles.shared';
+import { FullContainerStyles, ContainerStyles } from '../../styles.shared';
 import BlocoFinal from '../../assets/img/bloco_final_image.svg';
 
+export const JoinFullContainer = styled.section`
+    ${FullContainerStyles}
+    background-color: var(--bg-white);
+`;
+
 export const JoinContainer = styled.section`
-    ${DefaultContainer}
+    ${ContainerStyles}
     align-items: center;
     background: no-repeat right url(${BlocoFinal});
-    width: 100%;
     height: 672px;
 
     > div {

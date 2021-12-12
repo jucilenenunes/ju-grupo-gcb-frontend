@@ -1,9 +1,14 @@
 import styled from 'styled-components';
-import { DefaultContainer } from '../../styles.shared';
+import { FullContainerStyles, ContainerStyles } from '../../styles.shared';
 import Illustration from '../../assets/img/Illustration.svg';
 
-export const HeaderContainer = styled.header`
-    ${DefaultContainer}
+export const HeaderFullContainer = styled.header`
+    ${FullContainerStyles}
+    background-color: var(--bg-white);
+`;
+
+export const HeaderContainer = styled.section`
+    ${ContainerStyles}
     background: no-repeat right url(${Illustration});
     height: 746px;
 

@@ -18,6 +18,10 @@ export default createGlobalStyle`
         --border-blue: #2D3561;
     }
 
+    div#root {
+        width: 100%;
+    }
+
     * {
         margin: 0;
         padding: 0;

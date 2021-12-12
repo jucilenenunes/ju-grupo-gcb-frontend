@@ -1,11 +1,15 @@
 import styled from 'styled-components';
+import { ContainerStyles, FullContainerStyles } from '../../styles.shared';
+
+export const BestRecipesFullContainer = styled.section`
+    ${FullContainerStyles}
+    background-color: var(--bg-light-gray);
+`
 
 export const BestRecipesContainer = styled.section`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: var(--bg-light-gray);
+    ${ContainerStyles}
+
+    
     padding: 35px 0 35px 0;
 
     > article {

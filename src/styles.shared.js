@@ -1,6 +1,13 @@
 import styled from 'styled-components';
 
-export const DefaultContainer = `
+export const FullContainerStyles = `
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+`;
+
+export const ContainerStyles = `
     display: flex;
     justify-content: space-between;
     align-items: start;
@@ -24,6 +31,10 @@ export const DefaultContainer = `
     }
 `;
 
-export const Container = styled.main`
-    ${DefaultContainer}
+export const Container = styled.section`
+    ${ContainerStyles}
 `;
+
+export const FullContainer = styled.div`
+    ${FullContainerStyles}
+`

@@ -1,13 +1,15 @@
 import styled from 'styled-components';
+import { FullContainerStyles, ContainerStyles } from '../../styles.shared';
+
+export const BlogFullContainer = styled.section`
+    ${FullContainerStyles}
+    background-color: var(--bg-light-gray);
+`;
 
 export const BlogContainer = styled.section`
-    display: flex;
+    ${ContainerStyles}
+
     flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
-    flex-wrap: wrap;
-    background-color: var(--bg-light-gray);
-    width: 100%;
     padding: 35px 0 35px 0;
 
     > div {
