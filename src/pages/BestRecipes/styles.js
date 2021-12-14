@@ -1,9 +1,15 @@
 import styled from 'styled-components';
 import { ContainerStyles, FullContainerStyles } from '../../styles.shared';
+import { BestRecipesFullContainer768, BestRecipesContainer768 } from './styles.max.768';
+import { BestRecipesFullContainer1024, BestRecipesContainer1024 } from './styles.max.1024';
+import { BestRecipesFullContainer1200, BestRecipesContainer1200 } from './styles.max.1200';
 
 export const BestRecipesFullContainer = styled.section`
     ${FullContainerStyles}
     background-color: var(--bg-light-gray);
+    ${BestRecipesFullContainer768}
+    ${BestRecipesFullContainer1024}
+    ${BestRecipesFullContainer1200}
 `
 
 export const BestRecipesContainer = styled.section`
@@ -38,5 +44,9 @@ export const BestRecipesContainer = styled.section`
 
     > div > div > h3 {
         margin-bottom: 10px;
+        width: 200px;
     }
+    ${BestRecipesContainer768}
+    ${BestRecipesContainer1024}
+    ${BestRecipesContainer1200}
 `;
