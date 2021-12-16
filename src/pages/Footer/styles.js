@@ -14,8 +14,13 @@ export const FooterContainer = styled.section`
     background-color: var(--bg-light-gray);
 
     @media only screen and (max-width:768px){
-        display: block;
         text-align: center;
+        align-content: center;
+
+        > div { 
+            width: 100%; 
+            margin: 0;            
+        }
 
         > div > span {
             font-size: 13px;

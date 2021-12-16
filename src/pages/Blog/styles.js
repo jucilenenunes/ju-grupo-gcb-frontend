@@ -9,6 +9,8 @@ export const BlogFullContainer = styled.section`
 export const BlogContainer = styled.section`
     ${ContainerStyles}
 
+    width: 1300px;
+    justity-content: center;
     flex-direction: row;
     padding: 35px 0 35px 0;
 

@@ -1,10 +1,16 @@
 import styled from 'styled-components';
 import { FullContainerStyles, ContainerStyles } from '../../styles.shared';
 import BlocoFinal from '../../assets/img/bloco_final_image.svg';
+import { JoinFullContainer768, JoinContainer768 } from './styles.max.768';
+import { JoinFullContainer1024, JoinContainer1024 } from './styles.max.1024';
+import { JoinFullContainer1200, JoinContainer1200 } from './styles.max.1200';
 
 export const JoinFullContainer = styled.section`
     ${FullContainerStyles}
     background-color: var(--bg-white);
+    ${JoinFullContainer768}
+    ${JoinFullContainer1024}
+    ${JoinFullContainer1200}
 `;
 
 export const JoinContainer = styled.section`
@@ -51,4 +57,8 @@ export const JoinContainer = styled.section`
         font-weight: bold;
         box-shadow: 2px 4px 4px var(--bg-green);
     }
+
+    ${JoinContainer768}
+    ${JoinContainer1024}
+    ${JoinContainer1200}
 `;

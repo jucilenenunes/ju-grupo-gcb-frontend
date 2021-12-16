@@ -10,14 +10,14 @@ const FullPages = () => {
     
     return (
         <>
-            <Header />
+        <Header />
             <main>
-                <BestRecipes />
-                <BestServices />
-                <Blog />
+               <BestRecipes />
+               <BestServices />
+                {/*<Blog />*/} 
                 <Join />
             </main>
-            <Footer />
+           <Footer />
         </>
     );
 }

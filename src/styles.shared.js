@@ -15,11 +15,9 @@ export const ContainerStyles = `
     width: 1366px;
     padding: 0 20px; 
 
-    @media (max-width: 600px)
+    @media (max-width: 768px)
     {
-        body {
-            
-        }
+        width: 100%;
 
         header-call-to-action {
             margin-left: -60px;
