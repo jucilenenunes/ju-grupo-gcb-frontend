@@ -42,6 +42,9 @@ Projeto desenvolvido como teste para posição Frontend no Grupo GCB.
   
  ![Landing Page](https://user-images.githubusercontent.com/82344833/146593254-25a521f2-3d02-4d43-ad7c-994803c5f682.jpeg)
 
+
+
+🔗 Site hospedado no Netlify: https://healthy-food-frontend.netlify.app/
   
  ```diff
 + 👩‍💻 By Jucilene Nunes
