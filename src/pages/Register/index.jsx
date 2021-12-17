@@ -61,7 +61,7 @@ const Register = ({open, setOpen}) => {
             if (!dtReg.addressPostalCode) {
                 result.hasErrors = true;
                 result.errors.push({ field: 'addressPostalCode', message: 'Field "CEP" is required.'});
-            } else if (dtReg.addressPostalCode.length !== 9) {
+            } else if (dtReg.addressPostalCode.length !== 8) {
                 result.hasErrors = true;
                 result.errors.push({ field: 'addressPostalCode', message: 'Field "CEP" is required and have to contain 9 characters.'});
             }
@@ -86,12 +86,15 @@ const Register = ({open, setOpen}) => {
         const checkResult = check(dataRegister);
         if (!checkResult.hasErrors) {
             localStorage['dataRegister'] = JSON.stringify(dataRegister);
+            setDataRegister({ ...dataRegister, cepResultado: undefined });
+            setOpen(false);
+            alert('Grata pela oportunidade de apresentar meu trabalho!\n\nOs dados foram salvos no localStorage conforme descrito.\n\nby Jucilene Nunes');
         }
     }
 
     return (!!open ?
         <Modal title="Register" setOpen={setOpen}>
-            <div class="form-register">
+            <div className="form-register">
                 <FormControl id="name">
                     <label>Name:</label>
                     <input type="text" onChange={onChangeField} />

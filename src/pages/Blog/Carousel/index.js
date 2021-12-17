@@ -35,35 +35,35 @@ const Carousel = () => {
     return (
         <CarouselContainer {...settings}>
             <div>
-                <img src={BlogImage1} alt="Quic-start guide to nuts and seeds" />
-                <h3>1 Quic-start guide to nuts and seeds</h3>
+                <img src={BlogImage1} alt="Quick-start guide to nuts and seeds" />
+                <h3>Quick-start guide<br/>to nuts and seeds</h3>
                 <div>
                     <img className="user" src={UserImage1} alt="Kevin Ibrahim" />
                     <span>Kevin Ibrahim</span>
                 </div>
             </div>
             <div>
-                <img src={BlogImage2} alt="Quic-start guide to nuts and seeds" />
-                <h3>2 Quic-start guide to nuts and seeds</h3>
+                <img src={BlogImage2} alt="Nutrition: Tips for Improving Your Health" />
+                <h3>Nutrition: Tips for<br/>Improving Your Health</h3>
                 <div>
-                    <img className="user" src={UserImage2} alt="Kevin Ibrahim" />
-                    <span>Kevin Ibrahim</span>
+                    <img className="user" src={UserImage2} alt="Mike Jackson" />
+                    <span>Mike Jackson</span>
                 </div>
             </div>
             <div>
-                <img src={BlogImage3} alt="Quic-start guide to nuts and seeds" />
-                <h3>3 Quic-start guide to nuts and seeds</h3>
+                <img src={BlogImage3} alt="The top 10 benefits of eating healthy" />
+                <h3>The top 10 benefits<br/>of eating healthy</h3>
                 <div>
-                    <img className="user" src={UserImage3} alt="Kevin Ibrahim" />
-                    <span>Kevin Ibrahim</span>
+                    <img className="user" src={UserImage3} alt="Bryan McGregor" />
+                    <span>Bryan McGregor</span>
                 </div>
             </div>
             <div>
-                <img src={BlogImage4} alt="Quic-start guide to nuts and seeds" />
-                <h3>5 Quic-start guide to nuts and seeds</h3>
+                <img src={BlogImage4} alt="What Makes a Healthy Diet?" />
+                <h3>What Makes a<br/>Healthy Diet?</h3>
                 <div>
-                    <img className="user" src={UserImage4} alt="Kevin Ibrahim" />
-                    <span>Kevin Ibrahim</span>
+                    <img className="user" src={UserImage4} alt="Jashua" />
+                    <span>Jashua</span>
                 </div>
             </div>
         </CarouselContainer>

@@ -12,7 +12,8 @@ export const ContainerStyles = `
     justify-content: space-between;
     align-items: start;
     flex-wrap: wrap;
-    width: 1366px;
+    width: 1360px;
+    max-width: 1360px;
     padding: 0 20px; 
 
     @media (max-width: 768px)

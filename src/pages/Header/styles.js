@@ -144,57 +144,7 @@ export const HeaderContainer = styled.section`
         justify-content: center;
     }
 
-    // @media (max-width: 1366px)
-    // {
-    //     background-size: auto 100%;
-    //     height: 500px;
-
-    //     .header-bar > .menu {
-    //         padding: 0 70px;
-    //     }
-    // }
-
-    // @media (max-width: 1023px)
-    // {
-    //     .header-bar > .logotype {
-    //         font-size: 20px;
-    //     }
-
-    //     .header-call-to-action {
-    //         width: 240px;
-    //     }
-    
-    //     .header-call-to-action > h1 {
-    //         font-size: 34px;
-    //     }
-
-    //     .header-call-to-action > .form-box {
-    //         padding-top: 20px;
-    //     }
-
-    //     .header-call-to-action > .form-box > input { 
-    //         width: 190px;
-    //     }
-    // }
-
-    // @media (max-width: 767px)
-    // {
-    //     background: no-repeat right url(${Illustration});
-    //     background-size: auto 100%;
-    //     height: 200px;
-
-
-    //     justify-content: space-between;
-    //     align-items: start;
-    //     flex-wrap: wrap;
-
-    //     .header-bar > .menu-mobile-btn {
-    //         display: block;
-    //         transform: translateX(0);
-    //     }
-    // }
-
     ${HeaderContainer1200}
     ${HeaderContainer1024}
     ${HeaderContainer768}
-`
+`;
