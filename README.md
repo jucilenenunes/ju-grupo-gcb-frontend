@@ -3,7 +3,7 @@ Projeto desenvolvido como teste para posição Frontend no Grupo GCB.
 
 ##
 
-## Requisitos solicitados e contemplados:
+## Requisitos:
 
 ✔️ *Desenvolver o site que está em anexo, utilizando totalidade de estrutura React, o site tem que ser 100% responsivo, "iremos avaliar bem a responsividade".*
 
