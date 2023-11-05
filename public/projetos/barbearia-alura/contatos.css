@@ -1,0 +1,103 @@
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+}
+
+.formulario-contato > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+    margin-top: 20px;
+}
+
+.formulario-contato > form > h1 {
+    font-size: 40px;
+    padding: 20px;
+ 
+ }
+
+
+
+@media screen and (max-width: 736px){
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, video {
+        width: auto;
+    }
+
+    .caixa {
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .formulario-contato > form > h1 {
+        font-size: 22px;
+        padding: 20px;
+        font-weight: bold;
+     }
+
+    nav {
+        position: static;
+    } 
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+
+    .produtos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:auto;
+        height: auto;
+    }
+
+    .produtos > li  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:400px;
+        height: auto;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, video {
+        width: auto;
+    }
+
+    .caixa {
+        position: relative;
+        margin:0 auto;
+        text-align: center;
+    }
+    
+    .conteudo-beneficios {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+     
+        
+    }
+    .lista-beneficios {
+        padding: 20px 0 0 30px;
+           
+    }
+
+   .formulario-contato > form > h1 {
+        font-size: 22px;
+        padding: 20px;
+        font-weight: bold;
+     }
+     
+    nav {
+        position: static;
+    } 
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}

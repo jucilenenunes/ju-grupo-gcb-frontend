@@ -1,0 +1,42 @@
+p{
+    color:blueviolet;
+    font-family:sans-serif;
+}
+
+
+
+body{
+    background-color: rgb(244, 200, 248);
+}
+
+*{
+
+    padding: 50;
+}
+
+footer{
+    background-color:honeydew;
+    color: black;
+    height: 30px;
+}
+
+#div_direita{
+    background-color: red;
+    min-height: 200px;
+    width: 50px;
+    float: right;
+
+}
+
+#div_esquerda{
+    background-color: yellow;
+    min-height: 200px;
+    width: 50px;
+    float: left;
+}
+
+.container{
+    width: 960px;
+    margin: auto;
+    
+}
